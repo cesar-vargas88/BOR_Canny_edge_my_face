@@ -202,6 +202,6 @@ include_directories( include ${catkin_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS})
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-add_executable(image_subscriber src/image_subscriber.cpp)
-target_link_libraries(image_subscriber ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
-add_dependencies(image_subscriber canny_edge_my_face_gencpp)
+add_executable(canny_edge_my_face_Node src/canny_edge_my_face_Node.cpp)
+target_link_libraries(canny_edge_my_face_Node ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+add_dependencies(canny_edge_my_face_Node canny_edge_my_face_gencpp)
